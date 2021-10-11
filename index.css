@@ -1,0 +1,37 @@
+div.letter{
+    border: 1px #990000 solid;
+    min-height: 120px;
+    margin: 40px 30px 30px 30px;
+    background-color: #F6CEA4;
+    text-align: center;
+}
+
+div.letter h1:first-child{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #990000;
+    color: #fff;
+    width: calc(100% + 20px);
+    position: relative;
+    left: -10px;
+}
+
+div.letter h1:first-child::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: -10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fff #7c0000 #7c0000 transparent;
+}
+
+.letter-content {
+    border: 1px #990000 solid;
+    min-height: 120px;
+    margin: 40px 15% 30px 15%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
